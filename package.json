@@ -24,7 +24,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o .out",
-    "deploy": "storybook-to-ghpages"
+    "predeploy": "yarn build-storybook",
+    "deploy": "storybook-to-ghpages --existing-output-dir=.out"
   },
   "eslintConfig": {
     "extends": "react-app"
