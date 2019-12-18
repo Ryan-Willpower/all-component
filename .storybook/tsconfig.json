@@ -9,6 +9,7 @@
     "allowJs": false,
     "jsx": "react",
     "moduleResolution": "node",
+    "rootDir": "../",
     "outDir": "dist",
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -16,14 +17,17 @@
     "strictNullChecks": true,
     "declaration": true
   },
-  "include": ["src"],
+  "include": ["../src/**/*"],
   "exclude": [
     "node_modules",
     "build",
     "dist",
+    "scripts",
+    "acceptance-tests",
     "webpack",
     "jest",
     "src/setupTests.ts",
-    "**/*/*.test.ts"
+    "**/*/*.test.ts",
+    "examples"
   ]
 }
